@@ -1,0 +1,757 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/utilities.css">
+        <link rel="stylesheet" href="css/all.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/js/bootstrap.bundle.min.js"
+      rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet">
+      <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+
+      <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet">
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+      <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script> 
+      
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+       
+    </head>
+    <body>
+
+            
+        <header>
+          <div class="search-wrapper">
+              <span class="ti-search"></span>
+              <input type="search" placeholder="Search">
+          </div>
+          <div class="col-sm-5">
+            <div class="user-area dropdown float-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="user-avatar rounded-circle" src="images/John Doe.png" width="30px" height="30px" alt="User Avatar">
+                </a>
+
+                <div class="user-menu dropdown-menu">
+                    <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                    <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                    <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                </div>
+            </div>
+          </div>
+      </header>
+ 
+
+    <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#">John Doe</a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+           
+          <div class="sidebar-menu">
+            <ul>
+              <li class="header-menu">
+                <span>General</span>
+              </li>
+              <li>
+                <a href="index.html">
+                  <i class="fa fa-dashboard"></i>
+                  <span>Dashboard</span>
+                
+                </a>
+              </li>
+             
+               
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-comment-alt"></i>
+                  <span>Questions</span>
+              
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">All questions
+    
+                      </a>
+                    </li>
+                    <li>
+                      <a href="new.html">New Questions</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </li>
+             
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-book"></i>
+                  <span>Subjects</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Math</a>
+                    </li>
+                    <li>
+                      <a href="#">English</a>
+                    </li>
+                    <li>
+                      <a href="#">Kiswahili</a>
+                    </li>
+                    <li>
+                      <a href="#">Science</a>
+                    </li>
+                    <li>
+                      <a href="#">Social Students</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-line-chart"></i>
+                  <span>Charts</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Pie chart</a>
+                    </li>
+                    <li>
+                      <a href="#">Line chart</a>
+                    </li>
+                   
+                </div>
+              </li>
+            
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Google maps</a>
+                    </li>
+                    <li>
+                      <a href="#">Open street map</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header-menu">
+                <span>Others</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-user"></i>
+                  <span>Manage users</span>
+                  
+                </a>
+              </li>
+            <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-bell"></i>
+                  <span>Notifications</span>
+                  <span class="badge badge-pill badge-danger notification">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">New users
+    
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">Downloads</a>
+                    </li>
+                    <li>
+                      <a href="new.html">New questions</a>
+                    </li>
+                  </ul>
+                </div>
+              </li> 
+              <li>
+                <a href="#">
+                  <i class="fa fa-edit"></i>
+                  <span>Report</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+        <div class="container-fluid">
+    </div>  
+                <main>
+               <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+    <li class="breadcrumb-item"><a href="#">Questions</a></li>
+    <li class="breadcrumb-item active" aria-current="page">All Questions</li>
+  </ol>
+</nav>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container"></div>
+                          <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                <!-- <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="dataTable_length"><label>Show <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="9">9</option><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">  -->
+                                    
+                              <thead>
+                                 <div class="content"> 
+                                    <!-- <table class="table table-bordered">    -->
+                                    
+                                       <tr>
+                                         <th scope="col">No</th>
+                                         <th scope="col">Question ID</th>
+                                         <th scope="col">Question</th>
+                                         <th scope="col">Level</th>
+                                         <th scope="col">Topic</th>
+                                         <th scope="col">Status</th>
+                                         <th scope="col">Action</th>
+                                         <th></th>
+                                       </tr>
+                                     </thead>
+                                     <tbody>
+                                       <tr>
+                                         <td>1</td>
+                                         <td>395395</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 4</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                           <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                         </div>
+                                        
+                                       
+                                       </tr>
+                                       <tr>
+                                         <td>2</td>
+                                         <td>395396</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 4</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                           <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                         </div>
+                                         
+                                       </tr>
+                                       <tr>
+                                         <td>3</td>
+                                         <td>395397</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 1</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                           <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                         </div>
+                                        
+                                       </tr>
+                                       <tr>
+                                         <td>4</td>
+                                         <td>395398</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 1</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                           <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                         </div>
+                                      
+                                       </tr>
+                                       <tr>
+                                         <td>5</td>
+                                         <td>395399</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 4</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                           <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                         </div>
+                                      
+                                       </tr>
+                                       <tr>
+                                         <td>6</td>
+                                         <td>395385</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 4</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                           <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                         </div>
+                                       </tr>
+                                       <tr>
+                                         <td>7</td>
+                                         <td>395375</td>
+                                         <td>What is the missing 
+                                            numbers                    
+                                            500-_______=250</td>
+                                            <td>Grade 1</td>
+                                            <td>Subtraction
+                                                property of 
+                                                zero</td>
+                                         <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                         </div>
+                                         <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                            <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                          </div></td>
+                                       </tr>
+                                       <tr>
+                                        <td>8</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>9</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>10</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>11</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>12</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>13</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>14</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>15</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>16</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>17</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>18</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>19</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>20</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>21</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>22</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>23</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>24</td>
+                                        <td>395375</td>
+                                        <td>What is the missing 
+                                           numbers                    
+                                           500-_______=250</td>
+                                           <td>Grade 1</td>
+                                           <td>Subtraction
+                                               property of 
+                                               zero</td>
+                                        <div class="col-md-6">
+                                          <td><span class="status text-success">&bull;</span>Live</td>
+                                        </div>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i><div class="col-md-6">
+                                           <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                         </div></td>
+                                      </tr>
+                                     </tbody>
+                                   </table>
+                                   </div>
+                                   </div>
+                                   </main>
+                                   </div>
+                                   </div>     
+                              </tbody>
+                          </table>
+                          <!-- <div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers float-right" id="dataTable_paginate"><ul class="pagination"><li class="paginate_button page-item previous" id="dataTable_previous"><a href="dashboard.html" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next " id="dataTable_next"><a href="create.html" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div> -->
+                      </div>
+                          </div>
+                    </div>
+                  </div>
+           
+            
+            
+           
+        </body>
+        </html>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+const toggle = document.getElementById(toggleId),
+nav = document.getElementById(navId),
+bodypd = document.getElementById(bodyId),
+headerpd = document.getElementById(headerId)
+
+// Validate that all variables exist
+if(toggle && nav && bodypd && headerpd){
+toggle.addEventListener('click', ()=>{
+// show navbar
+nav.classList.toggle('show')
+// change icon
+toggle.classList.toggle('bx-x')
+// add padding to body
+bodypd.classList.toggle('body-pd')
+// add padding to header
+headerpd.classList.toggle('body-pd')
+})
+}
+}
+
+showNavbar('header-toggle','nav-bar','body-pd','header')
+
+/*===== LINK ACTIVE =====*/
+const linkColor = document.querySelectorAll('.nav_link')
+
+function colorLink(){
+if(linkColor){
+linkColor.forEach(l=> l.classList.remove('active'))
+this.classList.add('active')
+}
+}
+linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+// Your code to run since DOM is loaded and ready
+}); 
+      </script> 
+
+
+<script>
+  $(document).ready(function() {
+        $('#dataTable').DataTable();
+  });
+</script>
+<script>
+  jQuery(function ($) {
+
+$(".sidebar-dropdown > a").click(function() {
+$(".sidebar-submenu").slideUp(200);
+if (
+$(this)
+  .parent()
+  .hasClass("active")
+) {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .parent()
+  .removeClass("active");
+} else {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .next(".sidebar-submenu")
+  .slideDown(200);
+$(this)
+  .parent()
+  .addClass("active");
+}
+});
+
+$("#close-sidebar").click(function() {
+$(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+$(".page-wrapper").addClass("toggled");
+});
+});
+</script>

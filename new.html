@@ -1,0 +1,442 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.main.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/utilities.css">
+        <link rel="stylesheet" href="css/all.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/js/bootstrap.bundle.min.js"
+      rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet">
+      <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+
+      <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet">
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+      <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script> 
+      
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+       
+    </head>
+    <body>
+
+             
+      <header>
+        <div class="search-wrapper">
+            <span class="ti-search"></span>
+            <input type="search" placeholder="Search">
+        </div>
+        <div class="col-sm-5">
+          <div class="user-area dropdown float-right">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img class="user-avatar rounded-circle" src="images/John Doe.png" width="30px" height="30px" alt="User Avatar">
+              </a>
+
+              <div class="user-menu dropdown-menu">
+                  <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                  <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                  <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+              </div>
+          </div>
+        </div>
+    </header>
+
+
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a href="#">John Doe</a>
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+         
+        <div class="sidebar-menu">
+          <ul>
+            <li class="header-menu">
+              <span>General</span>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fa fa-dashboard"></i>
+                <span>Dashboard</span>
+              
+              </a>
+            </li>
+           
+             
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-comment-alt"></i>
+                <span>Questions</span>
+            
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="quiz.html">All questions
+  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="new.html">New Questions</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </li>
+           
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span>Subjects</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Math</a>
+                  </li>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                  <li>
+                    <a href="#">Kiswahili</a>
+                  </li>
+                  <li>
+                    <a href="#">Science</a>
+                  </li>
+                  <li>
+                    <a href="#">Social Students</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-line-chart"></i>
+                <span>Charts</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Pie chart</a>
+                  </li>
+                  <li>
+                    <a href="#">Line chart</a>
+                  </li>
+                 
+              </div>
+            </li>
+          
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Google maps</a>
+                  </li>
+                  <li>
+                    <a href="#">Open street map</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-menu">
+              <span>Others</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-user"></i>
+                <span>Manage users</span>
+                
+              </a>
+            </li>
+          <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-bell"></i>
+                <span>Notifications</span>
+                <span class="badge badge-pill badge-danger notification">3</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <a class="dropdown-item media bg-flat-color-1" href="#">
+                    <i class="fa fa-check"></i>
+                    <p>Server #1 overloaded.</p>
+                </a>
+                    <a class="dropdown-item media bg-flat-color-4" href="#">
+                    <i class="fa fa-info"></i>
+                    <p>Server #2 overloaded.</p>
+                </a>
+                    <a class="dropdown-item media bg-flat-color-5" href="#">
+                    <i class="fa fa-warning"></i>
+                    <p>Server #3 overloaded.</p>
+                </a>
+                </ul>
+              </div>
+            </li> 
+            <li>
+              <a href="#">
+                <i class="fa fa-edit"></i>
+                <span>Report</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+      <div class="container-fluid">
+  </div>  
+              <main>
+             <nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+  <li class="breadcrumb-item"><a href="#">Questions</a></li>
+  <li class="breadcrumb-item active" aria-current="page">New Questions</li>
+</ol>
+</nav>
+      <!-- <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="ti-profile"></span>
+                <span>John Doe</span>
+                </h3>
+                <span class="ti-menu-alt"></span>
+            </div>
+           
+            <div class="sidebar-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="index.html">
+                        <span class="ti-dashboard"></span>
+                        <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="ti-comment-alt"></span>
+                        <span>Questions</span>
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="quiz.html">All questions</a>
+                        <a class="dropdown-item" href="new.html">Add New Questions</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a href="users.html">
+                        <span class="ti-user"></span>
+                      <span>Manage Users</span>
+                      </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      <span class="ti-book"></span>
+                      <span>Subjects</span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Math</a>
+                      <a class="dropdown-item" href="#">English</a>
+                      <a class="dropdown-item" href="#">Kiswahili</a>
+                      <a class="dropdown-item" href="#">Science</a>
+                      <a class="dropdown-item" href="#">Social Studies</a>
+                    </div>
+                  </li>
+                      <li class="nav-item">
+                          <a href="">
+                          <span class="ti-bell"></span>
+                          <span>Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"> 
+                      <a href="reports.html">
+                      <span class="ti-pencil"></span>
+                      <span>Report</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a href="">
+                  <span class="ti-settings"></span>
+                  <span>Setings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a href="">
+              <span class="bi bi-person-circle"></span>
+              <span>Account</span>
+            </a>
+        </li>
+            <li class="nav-item"> 
+              <a href="">
+              <span class="ti-shift-left"></span>
+              <span>Log Out</span>
+            </a>
+        </li>
+                </ul>
+            </div>
+            </div>
+        </div> -->
+      
+            <!-- <div class="main-content">
+                <header>
+                    <div class="search-wrapper">
+                        <span class="ti-search"></span>
+                        <input type="search" placeholder="Search">
+                    </div>
+                    <div class="social-icons">
+                        <span class="ti-bell"></span>
+                        <span class="ti-comment"></span>
+                        <div></div>
+                    </div>
+                </header>
+                <main>
+                <h5><strong>New Questions</strong></h5><p>Add new questions</p><br>       
+        </header> -->
+       
+              
+                <div class="card">
+                  <div class="card-body">
+                      <form>
+                      
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="inputState">Level</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>1</option>
+                              <option>4</option>
+                             
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="inputState">Subject</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>Math</option>
+                              <option>English</option>
+                              <option>Kiswahili</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="inputState">Topic</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>Energy</option>
+                              <option>Essay</option>
+                              <option>Algebra</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="inputState">Sub topic</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>Energy</option>
+                              <option>Essay</option>
+                              <option>Algebra</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="inputState">Question type</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option></option>
+                              <option></option>
+                              <option></option>
+                            </select>
+                          </div>
+                          </div>
+                         
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Agree to terms and conditions
+                            </label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit"><a href="#">Submit</a></button>
+                      </form>
+                        </div>
+                  </div><br><br>
+                  <div class="wrapper bg-white rounded">
+                    <div class="card-body">
+                    <div class="content"> <a href="#"><span class="fa fa-angle-left pr-2"></span>Back to Question</a>
+                        <p class="text-muted">Multiple Choice Question</p>
+                        <p class="text-justify h5 pb-2 font-weight-bold">Water is used for:</p>
+                        <div class="options py-3"> <label class="rounded p-2 option"> Drinking <input type="radio" name="radio"> <span class="crossmark"></span> </label> <label class="rounded p-2 option"> Transport <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="rounded p-2 option"> Bathing <input type="radio" name="radio"> <span class="crossmark"></span> </label> <label class="rounded p-2 option"> All of these <input type="radio" name="radio"> <span class="crossmark"></span> </label> </div> <b>Correct Feedback</b>
+                        <p class="mt-2 mb-4 pl-2 text-justify"> Well done!</p> <b>Incorrect Feedback</b>
+                        <p class="my-2 pl-2"> That was incorrect. Try again </p>
+                    </div> <input type="submit" value="Add Question" class="mx-sm-0 mx-1">
+                    </div>
+                </div>
+                </div>
+              </form> 
+        </body>
+        </html>
+
+        <script>
+          $(document).ready(function() {
+                $('#dataTable').DataTable();
+          });
+        </script>
+        <script>
+          jQuery(function ($) {
+        
+        $(".sidebar-dropdown > a").click(function() {
+        $(".sidebar-submenu").slideUp(200);
+        if (
+        $(this)
+          .parent()
+          .hasClass("active")
+        ) {
+        $(".sidebar-dropdown").removeClass("active");
+        $(this)
+          .parent()
+          .removeClass("active");
+        } else {
+        $(".sidebar-dropdown").removeClass("active");
+        $(this)
+          .next(".sidebar-submenu")
+          .slideDown(200);
+        $(this)
+          .parent()
+          .addClass("active");
+        }
+        });
+        
+        $("#close-sidebar").click(function() {
+        $(".page-wrapper").removeClass("toggled");
+        });
+        $("#show-sidebar").click(function() {
+        $(".page-wrapper").addClass("toggled");
+        });
+        });
+        </script>
