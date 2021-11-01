@@ -77,13 +77,13 @@
                   
                   </a>
                 </li>
-               
                 <li>
                     <a href="subject.html">
                       <i class="fa fa-book"></i>
                       <span>Subjects</span>
                     </a>
                   </li> 
+                 
                 <li class="sidebar-dropdown">
                   <a href="#">
                     <i class="fa fa-comment-alt"></i>
@@ -105,7 +105,7 @@
                   </div>
                 </li>
                
-              
+               
                 <li class="sidebar-dropdown">
                   <a href="#">
                     <i class="fa fa-line-chart"></i>
@@ -186,42 +186,59 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                          <li class="breadcrumb-item"><a href="linechart.html">Line chart</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Pie chart</li>
-                         
+                          <li class="breadcrumb-item"><a href="charts.html">Pie chart</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Line chart</li>
                         </ol>
                         </nav>
-                        <canvas id="myChart" style="width:100%;max-width:1400px"></canvas>
-
+                        <h4 class="line">Statistics Report</h4>
+                        <style>
+                        .line{
+                        text-align:center;
+                        }
+                        </style>
+                        <canvas id="myChart" style="width:100%;max-width:1500px"></canvas>
+                        
                         <script>
-                        var xValues = ["New Visits", "Unique Visits", "Old Visits", "Total users", "Total Downloads"];
-                        var yValues = [550, 490, 440, 1000, 350,];
-                        var barColors = [
-                          "#b91d47",
-                          "#00aba9",
-                          "#2b5797",
-                          "#e8c3b9",
-                          "#1e7145"
-                         
-                        ];
+                        var xValues = [550, 490, 440, 1000, 350,];
+                        var xValues = ["New Visits", "Unique Visits", "Old Visits", "Total Downloads", "Total users",];
                         
                         new Chart("myChart", {
-                          type: "pie",
+                          type: "line",
                           data: {
                             labels: xValues,
-                            datasets: [{
-                              backgroundColor: barColors,
-                              data: yValues
+                            datasets: [{ 
+                              data: [100, 790, 300, 900, 800,],
+                              borderColor: "#00ABA9",
+                              fill: false
+                            }, { 
+                              data: [50, 600, 150, 500, 700,],
+                              borderColor: "#2A5797",
+                              fill: false
+                            }, 
+                            { 
+                              data: [60, 450, 200, 350, 350,],
+                              borderColor: "#1E7145",
+                              fill: false
+                            },
+                            { 
+                              data: [150, 350, 80, 300, 600,],
+                              borderColor: "#B91D47",
+                              fill: false
+                            },{ 
+                              data: [250, 100, 440, 100, 950,],
+                              borderColor: "#E8C2B9",
+                              fill: false
                             }]
                           },
                           options: {
-                            title: {
-                              display: true,
-                              text: "Statistic report"
-                            }
+                            legend: {display: false}
                           }
+                          
                         });
                         </script>
+                        
+                             
+                          
         </body>
         </html>
 

@@ -1,139 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/utilities.css">
+      <link rel="stylesheet" href="css/all.css">
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/js/bootstrap.bundle.min.js"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ PAGE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script> 
+    
+  <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 
-</head>
-
-<body>
-  <style>
-
-body{
-    font-family: 'Work Sans', sans-serif;
-}
-.faq-heading{
-    border-bottom: #777;
-    padding: 20px 60px;
-}
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
-
-}
-.hr-line{
-  width: 60%;
-  margin: auto;
-}
-/* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-    /* background-color: #eee; */
-    color: #444;
-    cursor: pointer;
-    padding: 30px 20px;
-    width: 60%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin: auto;
-
-}
-.faq-body{
-    margin: auto;
-    /* text-align: center; */
-   width: 50%; 
-   padding: auto;
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    
-}
+    </head>
+    <body>
 
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.faq-page:hover {
-    background-color: #F9F9F9;
-}
-
-/* Style the faq-page panel. Note: hidden by default */
-.faq-body {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-}
-
-.faq-page:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
-}
-
-  </style>
-    <main>
-
-        <h1 class="faq-heading">FAQ'S</h1>
-        <section class="faq-container">
-            <div class="faq-one">
-
-                <!-- faq question -->
-                <h1 class="faq-page">What is an FAQ Page?</h1>
-
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
-                </div>
+ 
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
             </div>
-            <hr class="hr-line">
+            <div class="col-sm-5">
+              <div class="user-area dropdown float-right">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="user-avatar rounded-circle" src="images/John Doe.png" width="30px" height="30px" alt="User Avatar">
+                  </a>
 
-            <div class="faq-two">
+                  <div class="user-menu dropdown-menu">
+                      <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
 
-                <!-- faq question -->
-                <h1 class="faq-page">Why do you need an FAQ page?</h1>
+                      <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
 
-                <!-- faq answer -->
-
-                <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
-                </div>
+                      <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                  </div>
+              </div>
             </div>
-            <hr class="hr-line">
+        </header>
+   
 
-
-            <div class="faq-three">
-
-                <!-- faq question -->
-                <h1 class="faq-page">Does it improves the user experience of a website?</h1>
-
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
-                </div>
+      <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+              <a href="#">John Doe</a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
             </div>
+             
+            <div class="sidebar-menu">
+              <ul>
+                <li class="header-menu">
+                  <span>General</span>
+                </li>
+                <li>
+                  <a href="index.html">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                  
+                  </a>
+                </li>
+                <li>
+                    <a href="subject.html">
+                      <i class="fa fa-book"></i>
+                      <span>Subjects</span>
+                    </a>
+                  </li> 
+                 
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>Questions</span>
+                
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="quiz.html">All questions
+      
+                        </a>
+                      </li>
+                      <li>
+                        <a href="new.html">New Questions</a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                </li>
+               
+               
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-line-chart"></i>
+                    <span>Charts</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="charts.html">Pie chart</a>
+                      </li>
+                      <li>
+                        <a href="linechart.html">Line chart</a>
+                      </li>
 
-        </section>
+                  </div>
+                </li>
+              
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">Google maps</a>
+                      </li>
+                      <li>
+                        <a href="#">Open street map</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-menu">
+                  <span>Others</span>
+                </li>
+                <li>
+                  <a href="users.html">
+                    <i class="fa fa-user"></i>
+                    <span>Manage users</span>
+                  </a>
+                </li>
+              <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span>Notifications</span>
+                    <span class="badge badge-pill badge-danger notification">3</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <a class="dropdown-item media bg-flat-color-1" href="#">
+                        <i class="fa fa-check"></i>
+                        <p>Server #1 overloaded.</p>
+                    </a>
+                        <a class="dropdown-item media bg-flat-color-4" href="#">
+                        <i class="fa fa-info"></i>
+                        <p>Server #2 overloaded.</p>
+                    </a>
+                        <a class="dropdown-item media bg-flat-color-5" href="#">
+                        <i class="fa fa-warning"></i>
+                        <p>Server #3 overloaded.</p>
+                    </a>
+                    </ul>
+                  </div>
+                </li> 
+                <li>
+                  <a href="#">
+                    <i class="fa fa-edit"></i>
+                    <span>Report</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- sidebar-menu  -->
+          </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+          <div class="container-fluid">
+      </div>  
+     <main>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Subjects</li>
+        </ol>
+      </nav>
+          
+          <li class="sub">Subjects Analysis</li>     
+            <div class="card">
+                <div class="card-body">
+                    <div class="container"></div>
+                      <table class="table" id="dataTable" width="100%" cellspacing="0">
+                           
+                          <thead>
+                             <div class="content"> 
+                                <!-- <table class="table table-bordered">    -->
+                                   <tr>
+                                     <th scope="col">Subjects</th>
+                                     <th scope="col">No of questions</th>
+                                     <th scope="col">Edited questions</th>
+                                     <th scope="col">Status</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <td><a href="math.html">Math</a></td>
+                                     <td>10</td>
+                                     <td>2</td>
+                                     <td><span class="status text-success">&bull;</span> Active</td>
+                                       
+                                    
+                                   
+                                   </tr>
+                                   <tr>
+                                     <td><a href="math.html">English</a></td>
+                                     <td>20</td>
+                                     <td>5</td>
+                                     <td><span class="status text-success">&bull;</span> Active</td>
+                                        
+                                     
+                                   </tr>
+                                   <tr>
+                                     <td><a href="math.html">Kiswahili</a></td>
+                                     <td>40</td>
+                                     <td>3</td>
+                                     <td><span class="status text-warning">&bull;</span> Inactive</td>
+                                    
+                                   </tr>
+                                   <tr>
+                                     <td><a href="math.html">Science</a></td>
+                                     <td>30</td>
+                                     <td>7</td>
+                                     <td><span class="status text-warning">&bull;</span> Inactive</td>
+                                       
+                                   </tr>
+                                   <tr>
+                                     <td><a href="math.html">Social Studies</a></td>
+                                     <td>15</td>
+                                     <td>5</td>
+                                     <td><span class="status text-success">&bull;</span> Active</td>
+                                  
+                                   </tr>
+                                   <tr>
+                                     <td><a href="math.html">CRE</a></td>
+                                     <td>18</td>
+                                     <td>4</td>
+                                     <td><span class="status text-success">&bull;</span> Active</td>
+                                   </tr>
+                                   <tr>
+                                     <td><a href="math.html">History</a></td>
+                                     <td>35</td>
+                                     <td>3</td>
+                                     <td><span class="status text-warning">&bull;</span> Inactive</td>
+                                   </tr>
+                                   <tr>
+                                    <td><a href="math.html">Chemistry</a></td>
+                                    <td>12</td>
+                                    <td>8</td>
+                                    <td><span class="status text-warning">&bull;</span> Inactive</td>
+                                  </tr>   
+                               </main>
+                               </div>
+                               </div>     
+                          </tbody>
+                      </table>
+                  </div>
+                      </div>
+                </div>
+              </div>
     </main>
-    <script src="main.js"></script>
-</body>
+    </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+const toggle = document.getElementById(toggleId),
+nav = document.getElementById(navId),
+bodypd = document.getElementById(bodyId),
+headerpd = document.getElementById(headerId)
+
+// Validate that all variables exist
+if(toggle && nav && bodypd && headerpd){
+toggle.addEventListener('click', ()=>{
+// show navbar
+nav.classList.toggle('show')
+// change icon
+toggle.classList.toggle('bx-x')
+// add padding to body
+bodypd.classList.toggle('body-pd')
+// add padding to header
+headerpd.classList.toggle('body-pd')
+})
+}
+}
+
+showNavbar('header-toggle','nav-bar','body-pd','header')
+
+/*===== LINK ACTIVE =====*/
+const linkColor = document.querySelectorAll('.nav_link')
+
+function colorLink(){
+if(linkColor){
+linkColor.forEach(l=> l.classList.remove('active'))
+this.classList.add('active')
+}
+}
+linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+// Your code to run since DOM is loaded and ready
+}); 
+</script> 
+
+
+<script>
+$(document).ready(function() {
+ $('#dataTable').DataTable();
+});
+</script>
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+  
+
+<script>
+  jQuery(function ($) {
+
+$(".sidebar-dropdown > a").click(function() {
+$(".sidebar-submenu").slideUp(200);
+if (
+$(this)
+  .parent()
+  .hasClass("active")
+) {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .parent()
+  .removeClass("active");
+} else {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .next(".sidebar-submenu")
+  .slideDown(200);
+$(this)
+  .parent()
+  .addClass("active");
+}
+});
+
+$("#close-sidebar").click(function() {
+$(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+$(".page-wrapper").addClass("toggled");
+});
+});
+</script>
+
