@@ -64,9 +64,10 @@
      position: fixed;
      left: 260px;
      top: 0;
+     right:0;
+     background-color: #fff;
      z-index: 100;
      width: calc(100% - 240px);
-     
      height: 60px;
      padding: 0rem 1rem;
      display: flex;
@@ -74,16 +75,24 @@
      justify-content:space-between;
      
  }
- .search-wrapper{
-     display: flex;
-     align-items: center;
- }
- .search-wrapper input {
-    border: 0;
-    outline: 0;
-    padding: 1rem;
-    height:38px;
- }
+  .navbar{
+ width: 100%; 
+ min-height: 3rem;
+ position: sticky;
+ top: 0;
+ z-index: 1071;
+ display: flex;
+ align-items: center;
+ padding: 0.5rem 1rem;
+  }
+  .navbar-expand{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+ 
+  .mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
  .social-icons {
      display: flex;
      align-items: center;
@@ -805,12 +814,32 @@ li.nav-item {
 .breadcrumb{
   margin-top: -100px;
 }
-        
-          
+.fa-mars{
+  color: #0089D7;
+}    
+.fa-venus{
+  color: #421867;
+}    
 
+.card-text{
+  padding-top: 12px;
 
-
-
+}
+.fa-folder-open-o{
+  color: #6154D6;
+}
+.fa-bars{
+  color:#DF2D8D;
+}
+.fa-list-ul{
+  color:#17AE1D;
+}
+.fa-chalkboard-teacher{
+  color:#3f95f0;
+}
+.fa-user-graduate{
+  color:#283181;
+}
 
 
 
