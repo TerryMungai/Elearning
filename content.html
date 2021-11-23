@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/utilities.css">
+      <link rel="stylesheet" href="css/all.css">
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1-beta1/dist/js/bootstrap.bundle.min.js"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    rel="stylesheet">
+
+    <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script> 
+    
+  <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    </head>
+    <body>
+        <header class="">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>  
+          </nav>
+          <div class="user-area dropdown mr-auto">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="user-avatar rounded-circle" src="images/John Doe.png" width="30px" height="30px" alt="User Avatar">
+            </a>
+
+            <div class="user-menu dropdown-menu">
+                <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+            </div>
+        </div>
+        </header>
+   
+
+      <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+              <a href="#">John Doe</a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+             
+            <div class="sidebar-menu">
+              <ul>
+                <li class="header-menu">
+                  <span>General</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                  
+                  </a>
+                </li>
+               
+                <li>
+                  <a href="subject.html">
+                    <i class="fa fa-book"></i>
+                    <span>Subjects</span>
+                  </a>
+                </li> 
+                <li>
+                    <a href="content.html">
+                      <i class="fa fa-book"></i>
+                      <span>Content</span>
+                    </a>
+                  </li> 
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>Questions</span>
+                
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="quiz.html">All questions
+      
+                        </a>
+                      </li>
+                      <li>
+                        <a href="new.html">New Questions</a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                </li>
+                
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-line-chart"></i>
+                    <span>Charts</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="charts.html">Pie chart</a>
+                      </li>
+                      <li>
+                        <a href="linechart.html">Line chart</a>
+                      </li>
+
+                  </div>
+                </li>
+              
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">Google maps</a>
+                      </li>
+                      <li>
+                        <a href="#">Open street map</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-menu">
+                  <span>Others</span>
+                </li>
+                <li>
+                  <a href="users.html">
+                    <i class="fa fa-user"></i>
+                    <span>Manage users</span>
+                  </a>
+                </li>
+              <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span>Notifications</span>
+                    <span class="badge badge-pill badge-danger notification">3</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <a class="dropdown-item media bg-flat-color-1" href="#">
+                        <i class="fa fa-check"></i>
+                        <p>Server #1 overloaded.</p>
+                    </a>
+                        <a class="dropdown-item media bg-flat-color-4" href="#">
+                        <i class="fa fa-info"></i>
+                        <p>Server #2 overloaded.</p>
+                    </a>
+                        <a class="dropdown-item media bg-flat-color-5" href="#">
+                        <i class="fa fa-warning"></i>
+                        <p>Server #3 overloaded.</p>
+                    </a>
+                    </ul>
+                  </div>
+                </li> 
+                <li>
+                  <a href="#">
+                    <i class="fa fa-edit"></i>
+                    <span>Report</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- sidebar-menu  -->
+          </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-t-20">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Content</li>
+          <li class="breadcrumb-item"><a href="#"></a></li>
+        </ol>
+      </nav>
+    
+<div class="card-content">
+      <div class="card-columns">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+               <i class="fas fa-user-graduate fa-3x" style="color:#2992DD;" aria-hidden="true"></i>
+               </div>
+               <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="card-text text-right"><a href="quiz.html">Grade 1</a></p>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+               <i class="fas fa-user-graduate fa-3x" style="color:#DD127A;" aria-hidden="true"></i>
+               </div>
+               <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="card-text text-right"><a href="quiz.html">Grade 4</a></p>
+                  </div>
+                </div>
+             </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+               <i class="fas fa-user-graduate fa-3x" style="color:#F9C004;" aria-hidden="true"></i>
+               </div>
+               <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="card-text text-right"><a href="quiz.html">Grade 2</a></p>
+                  </div>
+                </div>
+             </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+               <i class="fas fa-user-graduate fa-3x" style="color:#E77915;"  aria-hidden="true"></i>
+               </div>
+               <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="card-text text-right"><a href="quiz.html">Grade 5</a></p>
+                  </div>
+                </div>
+             </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+               <i class="fas fa-user-graduate fa-3x" style="color:#85C226;" aria-hidden="true"></i>
+               </div>
+               <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="card-text text-right"><a href="quiz.html">Grade 3</a></p>
+                  </div>
+                </div>
+             </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+               <i class="fas fa-user-graduate fa-3x" style="color:#6C4689;" aria-hidden="true"></i>
+               </div>
+               <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="card-text text-right"><a href="quiz.html">Grade 6</a></p>
+                  </div>
+                </div>
+             </div>
+          </div>
+          </div>
+        </div>
+       </main>
+      </body>
+      </html>
